@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5dc;
+  color: #333;
+}
+
+/*! haader */
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #eae7dc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* ! layout */
+.container {
+  display: flex;
+}
+
+/* !Sidebar */
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  background: #eae7dc;
+}
+
+/* !Concent */
+.content {
+  width: 60%;
+  padding: 20px;
+}
+
+/* ! footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #eae7dc;
+  border-top: 1px solid #ccc;
+}
+
+/* !menu */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 8px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #d6ccc2;
+}
+
+/* ! aktif sayfa */
+.active {
+  background: #bfa27a;
+  color: white !important;
+}
+
+/* !Icon */
+.sidebar i {
+  font-size: 16px;
+}
+
+/*! Fotoğraf */
+.profile {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* ! kartlar */
+.card,
+.project-card,
+.edu-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.card:hover,
+.project-card:hover,
+.edu-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ! form */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background: #bfa27a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #a68a64;
+}
+
+/*! Tam tablet uyumlulupu */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .content {
+    width: 100%;
+  }
+}
+
+/* !Tam telefon uyunluluğu */
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .sidebar {
+    text-align: center;
+  }
+
+  .sidebar a {
+    justify-content: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .profile {
+    width: 120px;
+  }
+}
+
+/*! Tablet Optimizasyonu */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .content {
+    width: 100%;
+  }
+}
